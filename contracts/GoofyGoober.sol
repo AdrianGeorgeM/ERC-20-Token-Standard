@@ -7,9 +7,10 @@ import "hardhat/console.sol";
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
 contract GoofyGoober is ERC20 {
-    uint constant _initial_supply = 100 * (10 ** 18);
+    uint constant _initial_supply = 100 * (10 ** 18); // 100 tokens
 
     constructor() ERC20("GoofyGoober", "GG") {
-        _mint(msg.sender, _initial_supply);
+        // Set token name and symbol
+        _mint(msg.sender, _initial_supply); // Mint initial supply
     }
 }
