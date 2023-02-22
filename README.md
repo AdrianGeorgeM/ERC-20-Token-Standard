@@ -1,12 +1,18 @@
 # InkToken (INK) token deployed on the Goerli Test Network
 
-I will be setting up an ERC-20 token on the Goerli test network - start thinking what name you would like to name your very own ERC-20!
-
-Deploying contracts with the account: 0x2D2a164362ee0bdaB816fA7FCA35d98bABA44199
-Account balance: 1.725745410578009577
-Token address: 0x139c5f33A844bd2DB64a08F120333265b00D1f7E
-
-<!-- https://goerli.etherscan.io/address/0xAD604BCC4BDF69536aF1d6547EA9b9A8e9b1afBB -->
+I will be setting up an ERC-20 token on the Goerli test network!
 
 Event log
-https://goerli.etherscan.io/tx/0x8fab316df98f96bda66086aff4a37b4aeaa70b2a316b0939c62f21db6f32491f#eventlog
+https://goerli.etherscan.io/tx/0x86d6df771b2fac1e4ddf67f282a21426ea74dd14fc3d45d7853f36c2a2762433#eventlog
+
+Token
+0.npx hardhat run scripts/deploy.js --network goerli
+
+1. Deployed InkToken to
+   https://goerli.etherscan.io/address/0x31B9C6F8894cA8241c6bcD5377BA2F899cc5048d
+
+Bucket Challenge
+O.To generate a Winner event in transaction
+1.npx hardhat run scripts/emitWinner.js --network goerli
+
+https://goerli.etherscan.io/tx/0x86d6df771b2fac1e4ddf67f282a21426ea74dd14fc3d45d7853f36c2a2762433#eventlog

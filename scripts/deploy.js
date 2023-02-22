@@ -4,7 +4,7 @@
 // You can also run a script with `npx hardhat run <script>`. If you do that, Hardhat
 // will compile your contracts, add the Hardhat Runtime Environment's members to the
 // global scope, and execute the script.
-const hre = require('hardhat');
+// const hre = require('hardhat');
 
 async function main() {
 	const [deployer] = await ethers.getSigners();
@@ -15,11 +15,11 @@ async function main() {
 
 	console.log('Account balance:', await ethers.utils.formatEther(weiAmount));
 
-	// make sure to replace the "GoofyGoober" reference with your own ERC-20 name!
-	const Token = await ethers.getContractFactory('InkToken');
+	const Token = await ethers.getContractFactory('InkToken'); // Contract name
 	const token = await Token.deploy();
 
 	console.log('Token address:', token.address);
+	console.log('Token deployed to:', token.address);
 }
 
 // We recommend this pattern to be able to use async/await everywhere
